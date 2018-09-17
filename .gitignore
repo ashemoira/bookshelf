@@ -32,14 +32,8 @@
 .idea/misc.xml
 .idea/modules.xml
 .idea/workspace.xml
-Rakefile
 config/credentials.yml.enc
 config/database.yml
-config/environment.rb
-config/storage.yml
-lib/
-log/.keep
 package.json
 storage/
-tmp/.keep
 package-lock.json
