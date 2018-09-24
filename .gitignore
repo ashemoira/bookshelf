@@ -37,3 +37,8 @@ config/database.yml
 package.json
 storage/
 package-lock.json
+/public/packs
+/public/packs-test
+/node_modules
+yarn-debug.log*
+.yarn-integrity
