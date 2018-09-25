@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails bookshelf: production" uuid="96133f9a-33b3-4412-8630-4f9d1f3110ff">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="MYSQL" exact-version="0.0" />
+      <user-name>bookshelf</user-name>
+    </data-source>
+    <data-source name="Rails bookshelf: test" uuid="6951f506-6410-42de-b4c8-65d571eec053">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="MYSQL" exact-version="0.0" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+      <introspection-schemas>*:</introspection-schemas>
+    </data-source>
+    <data-source name="Rails bookshelf: development" uuid="3f722217-56c6-4312-a723-7ae605173e64">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="MYSQL" exact-version="0.0" />
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+  </component>
+</project>
