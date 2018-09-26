@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_180_917_190_027) do
+ActiveRecord::Schema.define(version: 20_180_925_180_027) do
   create_table 'books', options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8', force: :cascade do |t|
     t.string 'title', limit: 192, default: '', null: false
     t.string 'author', limit: 192, default: '', null: false
@@ -20,6 +20,21 @@ ActiveRecord::Schema.define(version: 20_180_917_190_027) do
     t.integer 'category'
     t.date 'publication_date'
     t.integer 'page'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+  end
+
+  create_table 'libraries', options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8', force: :cascade do |t|
+    t.string 'name', limit: 192, default: '', null: false
+    t.integer 'library_book_manage_id', null: false
+    t.integer 'storage', default: 50, null: false
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+  end
+
+  create_table 'library_book_manages', options: 'ENGINE=InnoDB DEFAULT CHARSET=utf8', force: :cascade do |t|
+    t.integer 'book_id', null: false
+    t.integer 'library_id', null: false
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
   end
