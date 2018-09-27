@@ -19,6 +19,22 @@ RSpec.describe 'Books', type: :request do
       before_create_book
       get books_url, params: {}
       expect(response.body).to include book.title
+      expect(response.body).to include book.author
+    end
+  end
+
+  describe 'GET #edit' do
+    it 'returns a success response' do
+      before_create_book
+      get edit_book_url(book)
+      expect(response.status).to eq 200
+    end
+
+    it 'returns a success response' do
+      before_create_book
+      get edit_book_url(book)
+      expect(response.body).to include book.title
+      expect(response.body).to include book.author
     end
   end
 end
